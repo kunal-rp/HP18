@@ -30,8 +30,17 @@ public class ServerConnection : MonoBehaviour {
     // Use this for initialization
     void Start () {
         _map = FindObjectOfType<AbstractMap>();
+
+
             
         StartCoroutine(GetData());
+
+        Vector2 coords = Vector2.zero;
+        coords.x = 34.0556f;
+        coords.y = -117.8210f;
+        //geo.HandleUserInput(coords.x + ", " + coords.y);
+        _map.SetCenterLatitudeLongitude(new Mapbox.Utils.Vector2d(coords.x, coords.y));
+        _map.Initialize(_map.CenterLatitudeLongitude, _map.AbsoluteZoom);
     }
 
     IEnumerator GetData()

@@ -64,7 +64,7 @@ public class TestLocationService : MonoBehaviour
         }
         else
         {
-            while (Input.location.status == LocationServiceStatus.Running)
+            if (Input.location.status == LocationServiceStatus.Running)
             {
                 // Access granted and location value could be retrieved
                 print("Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp);
@@ -74,12 +74,14 @@ public class TestLocationService : MonoBehaviour
                 _map.SetCenterLatitudeLongitude(new Mapbox.Utils.Vector2d(coords.x, coords.y));
                 _map.Initialize(_map.CenterLatitudeLongitude, _map.AbsoluteZoom);
                 //reloadScr.
-                yield return new WaitForSeconds(4f);
+                // yield return new WaitForSeconds(4f);
+                yield return null;
             }
-            Start();
+            //Start();
         }
 
         // Stop service if there is no need to query location updates continuously
         Input.location.Stop();
+        yield return null;
     }
 }
