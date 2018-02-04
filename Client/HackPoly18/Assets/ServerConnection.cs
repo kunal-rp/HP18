@@ -8,7 +8,7 @@ using Mapbox;
 using Mapbox.Unity.Map;
 
 [Serializable]
-struct PlaceOfInterest
+public struct PlaceOfInterest
 {
     public string id;
     public string name;
@@ -88,6 +88,8 @@ public class ServerConnection : MonoBehaviour {
                 if (Mapbox.Utils.Vector2d.Distance(mapPos, _map.CenterLatitudeLongitude) < specialDrawDistance)
                 {
                     p.go = Instantiate(specialHouse,_map.GeoToWorldPosition(new Mapbox.Utils.Vector2d(p.lat, p.lng)), Quaternion.identity);
+                    Property pScript = p.go.GetComponent<Property>();
+                    pScript.thisPlace = p;
                     spawnedObjs.Add(p.go);
                 }
             }
