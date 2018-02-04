@@ -1,0 +1,245 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 10.01.2013 14:28:08
+
+newmtl Bricks_BrickCommon
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1000 0.1000 0.1000
+	Kd 0.5000 0.5000 0.5000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Brick\Common 5-512.bmp
+	map_Kd C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Brick\Common 5-512.bmp
+
+newmtl Metal_Black_Plain
+	Ns 26.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4392 0.4392 0.4392
+	Ks 1.2690 1.2690 1.2690
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Map__12_Noise.tga
+	map_Kd Map__12_Noise.tga
+
+newmtl Front_Rails
+	Ns 5.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1157 0.1157 0.1157
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Back_Rails
+	Ns 5.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1157 0.1157 0.1157
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Panels
+	Ns 0.0000
+	Ni 1.5000
+	d 0.5000
+	Tr 0.5000
+	Tf 0.5000 0.5000 0.5000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Front_Frame
+	Ns 5.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7843 0.7843 0.7843
+	Ks 0.1157 0.1157 0.1157
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Back_Frame
+	Ns 47.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 0.9686 0.9333
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.2406 0.2406 0.2406
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Front
+	Ns 25.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0231 0.0231 0.0231
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Back
+	Ns 5.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.3922 0.3922 0.3922
+	Ks 0.1157 0.1157 0.1157
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Inner_Bevel
+	Ns 5.0000
+	Ni 1.5000
+	d 0.9000
+	Tr 0.1000
+	Tf 0.9000 0.9000 0.9000 
+	illum 2
+	Ka 0.7020 0.7020 0.7020
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.2500 0.2500 0.2500
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Frame
+	Ns 5.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.7843 0.7843 0.7843
+	Ks 0.1157 0.1157 0.1157
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Inner_Door
+	Ns 25.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1000 0.1000 0.1000
+	Kd 0.9804 0.9804 0.9804
+	Ks 0.0450 0.0450 0.0450
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Stones_Limestone
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.4471 0.4471 0.4471
+	Kd 0.4471 0.4471 0.4471
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Stones\Limesto1.jpg
+	map_Kd C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Stones\Limesto1.jpg
+	map_bump C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Stones\Limesto1.jpg
+	bump C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Stones\Limesto1.jpg
+
+newmtl Wood_Old
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1791 0.0654 0.0654
+	Kd 0.5804 0.4118 0.1961
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Wood\Oldwood.jpg
+	map_Kd C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Wood\Oldwood.jpg
+	map_bump C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Wood\Oldwood.jpg
+	bump C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Wood\Oldwood.jpg
+
+newmtl Concrete_Brown_Stucco
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1000 0.1000 0.1000
+	Kd 0.5000 0.5000 0.5000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Concrete\Stucco8.jpg
+	map_Kd C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Concrete\Stucco8.jpg
+	map_bump C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Concrete\Stucco8.jpg
+	bump C:\Program Files (x86)\Autodesk\3ds Max 2011\maps\Concrete\Stucco8.jpg
+
+newmtl wire_006135058
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.0235 0.5294 0.2275
+	Kd 0.0235 0.5294 0.2275
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Trunk
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1000 0.1000 0.1000
+	Kd 0.2745 0.1490 0.0118
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_bump -bm 0.7500 Map__2_Noise.tga
+
+newmtl Branch0
+	Ns 25.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.1000 0.1000 0.1000
+	Kd 0.2745 0.1490 0.0118
+	Ks 0.0450 0.0450 0.0450
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Canopy
+	Ns 25.0000
+	Ni 1.5000
+	d 0.5000
+	Tr 0.5000
+	Tf 0.5000 0.5000 0.5000 
+	illum 2
+	Ka 0.1000 0.1000 0.1000
+	Kd 0.0196 0.4392 0.0000
+	Ks 0.0450 0.0450 0.0450
+	Ke 0.0000 0.0000 0.0000
