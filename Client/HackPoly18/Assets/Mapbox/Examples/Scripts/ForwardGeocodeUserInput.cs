@@ -50,7 +50,7 @@ namespace Mapbox.Examples
 			_resource = new ForwardGeocodeResource("");
 		}
 
-		void HandleUserInput(string searchString)
+		public void HandleUserInput(string searchString)
 		{
 			_hasResponse = false;
 			if (!string.IsNullOrEmpty(searchString))
