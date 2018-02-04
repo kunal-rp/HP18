@@ -1,6 +1,7 @@
 namespace Mapbox.Examples
 {
-	using UnityEngine;
+    using Mapbox.Unity.Map;
+    using UnityEngine;
 	using UnityEngine.EventSystems;
 
 	public class CameraMovement : MonoBehaviour
@@ -18,8 +19,15 @@ namespace Mapbox.Examples
 		Vector3 _origin;
 		Vector3 _delta;
 		bool _shouldDrag;
+        AbstractMap _map;
+        Vector3 lastChange = Vector3.zero;
+        private void Start()
+        {
+            _map = FindObjectOfType<AbstractMap>();
+            lastChange = transform.position;
+        }
 
-		void HandleTouch()
+        void HandleTouch()
 		{
 			float zoomFactor = 0.0f;
 			//pinch to zoom. 
@@ -60,6 +68,7 @@ namespace Mapbox.Examples
 			transform.localPosition += transform.forward * y;
 		}
 
+        
 		void HandleMouseAndKeyBoard()
 		{
 			var x = 0f;
@@ -87,7 +96,16 @@ namespace Mapbox.Examples
 			{
 				var offset = _origin - _delta;
 				offset.y = transform.localPosition.y;
-				transform.localPosition = offset;
+                transform.localPosition = offset;
+                if (Vector3.Distance(lastChange, transform.localPosition) > 15f)
+                {
+                  //  print("changed");
+                    
+                   // _map.gameObject.transform.localPosition = new Vector3(offset.x, _map.transform.position.y, offset.z-0f);
+                   // _map.SetCenterLatitudeLongitude(_map.WorldToGeoPosition(transform.position));
+                   // _map.Initialize(_map.CenterLatitudeLongitude, _map.AbsoluteZoom);
+                    //lastChange = transform.position;
+                }
 			}
 			else
 			{

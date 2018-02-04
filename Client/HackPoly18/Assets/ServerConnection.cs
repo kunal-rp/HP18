@@ -30,6 +30,7 @@ public class ServerConnection : MonoBehaviour {
     // Use this for initialization
     void Start () {
         _map = FindObjectOfType<AbstractMap>();
+            
         StartCoroutine(GetData());
     }
 
@@ -74,7 +75,7 @@ public class ServerConnection : MonoBehaviour {
         Mapbox.Utils.Vector2d curMapPos = _map.CenterLatitudeLongitude;
         if (!lastMapPos.Equals(curMapPos) && places.Count > 0)
         {
-            print("changed");
+            //print("changed");
             lastMapPos = curMapPos;
             // draw and undraw specials
             foreach (GameObject go in spawnedObjs)

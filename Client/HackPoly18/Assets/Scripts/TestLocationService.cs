@@ -72,6 +72,7 @@ public class TestLocationService : MonoBehaviour
                 coords.y = Input.location.lastData.longitude;
                 //geo.HandleUserInput(coords.x + ", " + coords.y);
                 _map.SetCenterLatitudeLongitude(new Mapbox.Utils.Vector2d(coords.x, coords.y));
+                _map.Initialize(_map.CenterLatitudeLongitude, _map.AbsoluteZoom);
                 //reloadScr.
                 yield return new WaitForSeconds(4f);
             }

@@ -42,7 +42,7 @@
 			}
 		}
 
-		void Reload(float value)
+		public void Reload(float value)
 		{
 			if (_reloadRoutine != null)
 			{
