@@ -1,7 +1,7 @@
 
 //the variable used in place of a magic number for the amount of event objects in the _events array
 const NO_EVENTS = 5;
-//currently set to 5 objects, this number can be increased as the mount of properties types increase. 
+//currently set to 5 objects, this number can be increased as the mount of property types increase. 
 const _events = [
 				  {name: "cafe", value: 0, percentage: 0}, 
 				  {name: "school", value: 0, percentage: 0},
@@ -33,14 +33,16 @@ function stock_flux(){
 	}
 }
 
-//used to determinage 
+//used to determine the optimal range needed for the sigmoid function 
 function randomInRange() {
   return Math.random() * (6.0 + 6.0) -6.0;
 }
 
+ 
 function sigmoid(t) {
     return 1/(1+Math.pow(Math.E, -t));
 }
+
 
 function yes_or_no (){
 	var coin = Math.floor(Math.random() * Math.floor(10000));
@@ -54,5 +56,5 @@ function yes_or_no (){
 
 
 
-//tester = sigmoid(randomInRange());
+//var tester = sigmoid(randomInRange());
 //console.log(tester);
