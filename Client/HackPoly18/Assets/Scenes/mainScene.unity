@@ -1235,6 +1235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260708228}
   - component: {fileID: 1260708227}
+  - component: {fileID: 1260708229}
   m_Layer: 0
   m_Name: UserInfo
   m_TagString: Untagged
@@ -1254,6 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   geo: {fileID: 202522074}
+  reloadScr: {fileID: 0}
 --- !u!4 &1260708228
 Transform:
   m_ObjectHideFlags: 0
@@ -1267,6 +1269,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260708229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260708226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b551600537ea6e4b83f5de7eafd0e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 110210642}
+  specialHouse: {fileID: 1968564990109194, guid: 70ee55a05999b03428a06f37d57bfd87,
+    type: 2}
 --- !u!1 &1271362436
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,11 +5,14 @@ using UnityEngine;
 using UnityEngine;
 using System.Collections;
 using Mapbox.Examples;
+using Mapbox.Unity.Map;
 
 public class TestLocationService : MonoBehaviour
 {
+    AbstractMap _map;
     public ForwardGeocodeUserInput geo;
     private Vector2 coords = Vector2.zero;
+    public ReloadMap reloadScr;
 
     public Vector2 Coords
     {
@@ -26,6 +29,7 @@ public class TestLocationService : MonoBehaviour
 
     public void Start()
     {
+        _map = FindObjectOfType<AbstractMap>();
         StartCoroutine("StartCo");
     }
     IEnumerator StartCo()
@@ -66,8 +70,10 @@ public class TestLocationService : MonoBehaviour
                 print("Location: " + Input.location.lastData.latitude + " " + Input.location.lastData.longitude + " " + Input.location.lastData.altitude + " " + Input.location.lastData.horizontalAccuracy + " " + Input.location.lastData.timestamp);
                 coords.x = Input.location.lastData.latitude;
                 coords.y = Input.location.lastData.longitude;
-                geo.HandleUserInput(coords.x + ", " + coords.y);
-                yield return new WaitForSeconds(2f);
+                //geo.HandleUserInput(coords.x + ", " + coords.y);
+                _map.SetCenterLatitudeLongitude(new Mapbox.Utils.Vector2d(coords.x, coords.y));
+                //reloadScr.
+                yield return new WaitForSeconds(4f);
             }
             Start();
         }

@@ -21,9 +21,9 @@ MonoBehaviour:
     width: 1366
     height: 635
   m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 8832
+  controlID: 10589
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,9 +122,9 @@ MonoBehaviour:
     width: 1034
     height: 635
   m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 14006, y: 14042}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 8833
+  controlID: 10590
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 8983
+  controlID: 10561
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,9 +210,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 15.6664715, y: 227.00424, z: 10.475334}
+    m_Target: {x: 46.955116, y: 203.33432, z: -101.98488}
     speed: 2
-    m_Value: {x: 15.6664715, y: 227.00424, z: 10.475334}
+    m_Value: {x: 46.955116, y: 203.33432, z: -101.98488}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -236,9 +236,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0033018456, y: 0.061770376, z: -0.00020390867, w: 0.99808496}
+    m_Target: {x: -0.08121846, y: 0.001186009, z: -0.00009709042, w: -0.99669564}
     speed: 2
-    m_Value: {x: 0.0033018456, y: 0.061770376, z: -0.00020390867, w: 0.99808496}
+    m_Value: {x: -0.08121846, y: 0.0011860091, z: -0.00009709042, w: -0.9966957}
   m_Size:
     m_Target: 59.923264
     speed: 2
@@ -417,8 +417,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7caff7ff
-    m_LastClickedID: -544900
+    m_SelectedIDs: 4c4ef8ff
+    m_LastClickedID: -504244
     m_ExpandedIDs: 3cfbffff98fbffff9afbffff9efbffff0000000076320000bc320000c6320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -462,10 +462,10 @@ MonoBehaviour:
     y: 364
     width: 1034
     height: 271
-  m_MinSize: {x: 336, y: 271}
-  m_MaxSize: {x: 14006, y: 10021}
+  m_MinSize: {x: 332, y: 271}
+  m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
-  controlID: 8834
+  controlID: 10591
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -532,18 +532,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\sean\Documents\GitHub\HP18\Client\HackPoly18
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 343}
-    m_SelectedIDs: 3a6f0000
-    m_LastClickedID: 28474
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: c02b0000
+    m_LastClickedID: 11200
     m_ExpandedIDs: 00000000c02b0000102d00001a2d0000542e0000163100004231000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -597,8 +597,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7caff7ff
-    m_LastClickedInstanceID: -544900
+    m_SelectedInstanceIDs: 4c4ef8ff
+    m_LastClickedInstanceID: -504244
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 164b000010050000320500007a0500006c060000d4070000dcb402009802f1ff74080000020700009808000072090000a60800002a070000a8080000f809000022080000200c0000340700005a0c00002e0800007a2500002c2700009e0b0000aa0d00009c4affffd83c0100620c00003c080000400b0000920e0000380d00009a0b00004e0a00004c2e0000e22d000058070000860f00001a10000062070000480e0000440f0000aa070000341000006409000086d609004c0c0300ac110000aa0b0000d20800008e3afeff00000000fa0800000e090000fc0800001e0c000028150000386100004c4a00002237000062250000043500000a260000a42d0000
     m_RenameOverlay:
@@ -794,14 +794,16 @@ MonoBehaviour:
     width: 330
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
+  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/build
   m_GlobalObjectTypeName: 
   m_RegisteredViewURLs:
   - https://public-cdn.cloud.unity3d.com/editor/5.3/production/cloud/hub
   - https://public-cdn.cloud.unity3d.com/editor/5.3/production/cloud/unet
   - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
   - file://C:/Users/sean/AppData/Roaming/Unity/Packages/node_modules/unityeditor-cloud-hub/dist/index.html?failure=unity_connect
+  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/build
   m_RegisteredViewInstances:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

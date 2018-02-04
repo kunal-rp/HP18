@@ -11,17 +11,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120e43a7012622e49aca0c9217acd1f9, type: 3}
   m_Name: ExplorerTrafficLayer
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   _classificationKey: congestion
   _key: traffic
   Filters: []
-  _defaultStack: {fileID: 11400000, guid: 2706fc74622551042beb1b756ca44cac, type: 2}
+  _defaultStack: {fileID: 0}
   Stacks:
   - Type: low
+    Types:
+    - low
     Stack: {fileID: 11400000, guid: 2173c757ed80653408357eeafb90b8b4, type: 2}
   - Type: moderate
+    Types:
+    - moderate
     Stack: {fileID: 11400000, guid: 693322d922660bf44b2298060ff8a618, type: 2}
   - Type: heavy
+    Types:
+    - heavy
     Stack: {fileID: 11400000, guid: db258f06cb975c641bea13eafe0ca8a5, type: 2}
   - Type: severe
+    Types:
+    - severe
     Stack: {fileID: 11400000, guid: 627313f21fc074f44afdcda9365a95d3, type: 2}
+  _enableCoroutines: 0
+  _entityPerCoroutine: 20
