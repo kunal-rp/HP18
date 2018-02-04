@@ -1,5 +1,7 @@
 
+//the variable used in place of a magic number for the amount of event objects in the _events array
 const NO_EVENTS = 5;
+//currently set to 5 objects, this number can be increased as the mount of properties types increase. 
 const _events = [
 				  {name: "cafe", value: 0, percentage: 0}, 
 				  {name: "school", value: 0, percentage: 0},
@@ -24,6 +26,10 @@ function stock_flux(){
 			else
 				_events[index].value = -1;	
 		}
+		else
+			//to indicate a lack of change on this object we set the value 
+			//(which may be at +1 or -1 after several iterations) to 0
+			value = 0;
 	}
 }
 
