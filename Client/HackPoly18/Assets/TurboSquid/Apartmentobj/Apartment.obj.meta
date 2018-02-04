@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: d278cf5d6479948caa27de101ca70735
+timeCreated: 1517719234
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box001
+    100004: Box002
+    100006: FixedWindow001
+    100008: FixedWindow002
+    100010: FixedWindow003
+    100012: FixedWindow004
+    100014: FixedWindow005
+    100016: FixedWindow006
+    100018: Foliage001
+    100020: Foliage002
+    100022: Foliage003
+    100024: Foliage004
+    100026: Foliage005
+    100028: PivotDoor001
+    100030: Plane001
+    100032: Pyramid001
+    100034: StraightStair001
+    400000: //RootNode
+    400002: Box001
+    400004: Box002
+    400006: FixedWindow001
+    400008: FixedWindow002
+    400010: FixedWindow003
+    400012: FixedWindow004
+    400014: FixedWindow005
+    400016: FixedWindow006
+    400018: Foliage001
+    400020: Foliage002
+    400022: Foliage003
+    400024: Foliage004
+    400026: Foliage005
+    400028: PivotDoor001
+    400030: Plane001
+    400032: Pyramid001
+    400034: StraightStair001
+    2100000: Bricks_BrickCommon
+    2100002: Metal_Black_Plain
+    2100004: Stones_Limestone
+    2100006: Wood_Old
+    2100008: Back_Frame
+    2100010: Front_Frame
+    2100012: Back_Rails
+    2100014: Front_Rails
+    2100016: Panels
+    2100018: Canopy
+    2100020: Trunk
+    2100022: Branch0
+    2100024: Front
+    2100026: Back
+    2100028: Inner_Door
+    2100030: Inner_Bevel
+    2100032: Frame
+    2100034: Concrete_Brown_Stucco
+    2100036: wire_006135058
+    2300000: Box001
+    2300002: Box002
+    2300004: FixedWindow001
+    2300006: FixedWindow002
+    2300008: FixedWindow003
+    2300010: FixedWindow004
+    2300012: FixedWindow005
+    2300014: FixedWindow006
+    2300016: Foliage001
+    2300018: Foliage002
+    2300020: Foliage003
+    2300022: Foliage004
+    2300024: Foliage005
+    2300026: PivotDoor001
+    2300028: Plane001
+    2300030: Pyramid001
+    2300032: StraightStair001
+    3300000: Box001
+    3300002: Box002
+    3300004: FixedWindow001
+    3300006: FixedWindow002
+    3300008: FixedWindow003
+    3300010: FixedWindow004
+    3300012: FixedWindow005
+    3300014: FixedWindow006
+    3300016: Foliage001
+    3300018: Foliage002
+    3300020: Foliage003
+    3300022: Foliage004
+    3300024: Foliage005
+    3300026: PivotDoor001
+    3300028: Plane001
+    3300030: Pyramid001
+    3300032: StraightStair001
+    4300000: Box001
+    4300002: Box002
+    4300004: FixedWindow001
+    4300006: FixedWindow002
+    4300008: FixedWindow003
+    4300010: FixedWindow004
+    4300012: FixedWindow005
+    4300014: FixedWindow006
+    4300016: Foliage001
+    4300018: Foliage002
+    4300020: Foliage003
+    4300022: Foliage004
+    4300024: Foliage005
+    4300026: PivotDoor001
+    4300028: Plane001
+    4300030: Pyramid001
+    4300032: StraightStair001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.025
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
