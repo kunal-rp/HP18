@@ -22,6 +22,7 @@ struct PlaceOfInterest
 public class ServerConnection : MonoBehaviour {
     public Mapbox.Unity.Map.BasicMap map;
     List<PlaceOfInterest> places = new List<PlaceOfInterest>();
+    List<GameObject> spawnedObjs = new List<GameObject>();
     public GameObject specialHouse;
     AbstractMap _map;
     float specialDrawDistance = 0.005f;
@@ -67,41 +68,30 @@ public class ServerConnection : MonoBehaviour {
         }
     }
 
-    List<int> indicesToDelete = new List<int>();
     // Update is called once per frame
     void Update () {
-
-        if(lastMapPos != _map.CenterLatitudeLongitude  && places.Count > 0)
+        //print(_map.CenterLatitudeLongitude + " " + lastMapPos);
+        Mapbox.Utils.Vector2d curMapPos = _map.CenterLatitudeLongitude;
+        if (!lastMapPos.Equals(curMapPos) && places.Count > 0)
         {
+            print("changed");
+            lastMapPos = curMapPos;
             // draw and undraw specials
-            indicesToDelete.Clear();
+            foreach (GameObject go in spawnedObjs)
+                Destroy(go.gameObject);
+            spawnedObjs.Clear();
             for (int i = 0; i < places.Count; i++)
             {
                 PlaceOfInterest p = places[i];
+
                 Mapbox.Utils.Vector2d mapPos = new Mapbox.Utils.Vector2d(p.lat, p.lng);
                 if (Mapbox.Utils.Vector2d.Distance(mapPos, _map.CenterLatitudeLongitude) < specialDrawDistance)
                 {
-                    if(p.go != null)
-                    {
-                        Destroy(p.go);
-                    }
-                    //Conversions.GeoToWorldPosition(convert, _map.CenterMercator, _map.WorldRelativeScale).ToVector3xz()
-                    // p.go = Instantiate(specialHouse, Mapbox.Unity.Utilities.VectorExtensions.AsUnityPosition(new Vector2(p.lat, p.lng), map.CenterMercator, _map.world), Quaternion.identity);
-                   p.go = Instantiate(specialHouse,_map.GeoToWorldPosition(new Mapbox.Utils.Vector2d(p.lat, p.lng)), Quaternion.identity);
-                    print("Spawn");
-                }
-                else if (p.go != null)
-                {
-                    indicesToDelete.Add(i);
+                    p.go = Instantiate(specialHouse,_map.GeoToWorldPosition(new Mapbox.Utils.Vector2d(p.lat, p.lng)), Quaternion.identity);
+                    spawnedObjs.Add(p.go);
                 }
             }
-            for(int i = 0; i < indicesToDelete.Count;i++)
-            {
-                Destroy(places[indicesToDelete[i]].go.gameObject);
-                print("destroy");
-            }
-            indicesToDelete.Clear();
-            lastMapPos = _map.CenterLatitudeLongitude;
+
         }
 		
 	}
