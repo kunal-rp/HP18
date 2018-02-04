@@ -29,7 +29,7 @@ function stock_flux(){
 		else
 			//to indicate a lack of change on this object we set the value 
 			//(which may be at +1 or -1 after several iterations) to 0
-			value = 0;
+			_events[index].value = 0;
 	}
 }
 
